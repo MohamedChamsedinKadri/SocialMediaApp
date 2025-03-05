@@ -34,11 +34,11 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun navigatePage() {
     val navController  = rememberNavController()
-    NavHost(navController= navController, startDestination = "login_Page",
+    NavHost(navController= navController, startDestination = "LoginPage",
         builder = {
-            composable("login_Page", content = { LoginPage(navController= navController) })
-            composable("home_Page", content = { HomePage(navController= navController) })
-            composable("register_Page", content = { Register(navController= navController) })
+            composable("LoginPage", content = { LoginPage(navController= navController) })
+            composable("HomePage", content = { HomePage(navController= navController) })
+            composable("Register", content = { Register(navController= navController) })
         }
         )
 }

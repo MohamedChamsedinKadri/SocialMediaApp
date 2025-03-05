@@ -150,7 +150,7 @@ fun LoginPage(navController: NavController){
                                                 "Logged Successfully",
                                                 Toast.LENGTH_SHORT
                                             ).show()
-                                            navController.navigate("home")
+                                            navController.navigate("HomePage")
                                         }
                                     }
 
@@ -170,7 +170,7 @@ fun LoginPage(navController: NavController){
                 //create an account text
                             TextButton (
                                 onClick = {
-                                    navController.navigate("signup")
+                                    navController.navigate("Register")
                                 }
                             ) {
                                 Text(
